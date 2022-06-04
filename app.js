@@ -1,7 +1,8 @@
 const title = document.querySelector('#title');
 const text = document.querySelector('#text')
 const btn = document.querySelector('#btn');
-const background = document.querySelector('body')
+const anotherBtn = document.querySelector('#another-btn');
+const background = document.querySelector('body');
 let mode = 'light';
 
 btn.addEventListener('click', (e) => {
@@ -16,4 +17,7 @@ btn.addEventListener('click', (e) => {
         text.style.color = 'black';
         background.style.backgroundColor = 'white'
     }
-})
+});
+anotherBtn.addEventListener('click', (e) => {
+    background.style.backgroundColor = 'pink';
+});
